@@ -1,42 +1,194 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/googlearama.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/ebay.feature");
 formatter.feature({
-  "name": "Google Arama",
+  "name": "Ebayda Arama",
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "name": "TC01_kullanici googleda arama yapar",
+formatter.scenarioOutline({
+  "name": "TC06_kullanici ebayda urun arar",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@ebayarama"
+    }
+  ]
 });
 formatter.step({
-  "name": "kullanici google sayfasina gider",
+  "name": "kullanici \"http://ebay.com\" sayfasina gider",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "kullanici ebayda aramakutusuna \"\u003curunler\u003e\" yazar",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "kullanici ebaydaki sonuc sayisini ekrana yazar",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "Test Verileri",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "urunler"
+      ]
+    },
+    {
+      "cells": [
+        "araba"
+      ]
+    },
+    {
+      "cells": [
+        "bebek arabası"
+      ]
+    },
+    {
+      "cells": [
+        "bisiklet"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "TC06_kullanici ebayda urun arar",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@ebayarama"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "kullanici \"http://ebay.com\" sayfasina gider",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.GoogleAramaStepDefinitions.kullanici_google_sayfasina_gider()"
+  "location": "stepdefinitions.EbayAramaStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "techproeducation aramasi yapar",
+  "name": "kullanici ebayda aramakutusuna \"araba\" yazar",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.GoogleAramaStepDefinitions.techproeducation_aramasi_yapar()"
+  "location": "stepdefinitions.EbayAramaStepDefinitions.kullanici_ebayda_aramakutusuna_yazar(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "sayfa basligini kontrol eder",
+  "name": "kullanici ebaydaki sonuc sayisini ekrana yazar",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.GoogleAramaStepDefinitions.sayfa_basligini_kontrol_eder()"
+  "location": "stepdefinitions.EbayAramaStepDefinitions.kullanici_ebaydaki_sonuc_sayisini_ekrana_yazar()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "TC06_kullanici ebayda urun arar",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@ebayarama"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "kullanici \"http://ebay.com\" sayfasina gider",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefinitions.EbayAramaStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "kullanici ebayda aramakutusuna \"bebek arabası\" yazar",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.EbayAramaStepDefinitions.kullanici_ebayda_aramakutusuna_yazar(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "kullanici ebaydaki sonuc sayisini ekrana yazar",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefinitions.EbayAramaStepDefinitions.kullanici_ebaydaki_sonuc_sayisini_ekrana_yazar()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "TC06_kullanici ebayda urun arar",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@ebayarama"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "kullanici \"http://ebay.com\" sayfasina gider",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefinitions.EbayAramaStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "kullanici ebayda aramakutusuna \"bisiklet\" yazar",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.EbayAramaStepDefinitions.kullanici_ebayda_aramakutusuna_yazar(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "kullanici ebaydaki sonuc sayisini ekrana yazar",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefinitions.EbayAramaStepDefinitions.kullanici_ebaydaki_sonuc_sayisini_ekrana_yazar()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 });
