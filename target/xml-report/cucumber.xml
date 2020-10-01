@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="171.498">
-<testcase classname="Ebayda Arama" name="TC06_kullanici ebayda urun arar" time="100.254">
-<system-out><![CDATA[Given kullanici "http://ebay.com" sayfasina gider...........................passed
-And kullanici ebayda aramakutusuna "araba" yazar............................passed
-Then kullanici ebaydaki sonuc sayisini ekrana yazar.........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Ebayda Arama" name="TC06_kullanici ebayda urun arar 2" time="41.045">
-<system-out><![CDATA[Given kullanici "http://ebay.com" sayfasina gider...........................passed
-And kullanici ebayda aramakutusuna "bebek arabası" yazar....................passed
-Then kullanici ebaydaki sonuc sayisini ekrana yazar.........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Ebayda Arama" name="TC06_kullanici ebayda urun arar 3" time="24.908">
-<system-out><![CDATA[Given kullanici "http://ebay.com" sayfasina gider...........................passed
-And kullanici ebayda aramakutusuna "bisiklet" yazar.........................passed
-Then kullanici ebaydaki sonuc sayisini ekrana yazar.........................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="41.457">
+<testcase classname="Koala Palace" name="TC26_kullanici hotelreservationlist sayfasinda verileri girerek reservation arar" time="39.555">
+<system-out><![CDATA[Given kullanici koalapalace admin sayfasina gider...........................passed
+And kullanici kullaniciadi ve sifresini girer...............................passed
+Then kullanici giris islemini gerceklestirir................................passed
+Given kullanici hotelroomreservationlist sayfasina gider....................passed
+And kullanici hotelroomreservationlist hotelroomid bolumunde "team06" secer.passed
+And kullanici hotelroomreservationlist arama kutusuna tiklar................passed
+Then kullanici hotelroomreservationlist kayitlarini inceler.................passed
 ]]></system-out>
 </testcase>
 </testsuite>

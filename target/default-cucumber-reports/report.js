@@ -1,189 +1,101 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/ebay.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/koalapalace.feature");
 formatter.feature({
-  "name": "Ebayda Arama",
+  "name": "Koala Palace",
   "description": "",
-  "keyword": "Feature"
-});
-formatter.scenarioOutline({
-  "name": "TC06_kullanici ebayda urun arar",
-  "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Feature",
   "tags": [
     {
-      "name": "@ebayarama"
+      "name": "@koalapalace"
     }
   ]
 });
-formatter.step({
-  "name": "kullanici \"http://ebay.com\" sayfasina gider",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "kullanici ebayda aramakutusuna \"\u003curunler\u003e\" yazar",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "kullanici ebaydaki sonuc sayisini ekrana yazar",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "Test Verileri",
+formatter.background({
+  "name": "Koala Palace Admin Giris",
   "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "urunler"
-      ]
-    },
-    {
-      "cells": [
-        "araba"
-      ]
-    },
-    {
-      "cells": [
-        "bebek arabası"
-      ]
-    },
-    {
-      "cells": [
-        "bisiklet"
-      ]
-    }
-  ]
-});
-formatter.scenario({
-  "name": "TC06_kullanici ebayda urun arar",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@ebayarama"
-    }
-  ]
+  "keyword": "Background"
 });
 formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici \"http://ebay.com\" sayfasina gider",
+  "name": "kullanici koalapalace admin sayfasina gider",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.EbayAramaStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
+  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_koalapalace_admin_sayfasina_gider()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici ebayda aramakutusuna \"araba\" yazar",
+  "name": "kullanici kullaniciadi ve sifresini girer",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.EbayAramaStepDefinitions.kullanici_ebayda_aramakutusuna_yazar(java.lang.String)"
+  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_kullaniciadi_ve_sifresini_girer()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici ebaydaki sonuc sayisini ekrana yazar",
+  "name": "kullanici giris islemini gerceklestirir",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.EbayAramaStepDefinitions.kullanici_ebaydaki_sonuc_sayisini_ekrana_yazar()"
+  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_giris_islemini_gerceklestirir()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "TC06_kullanici ebayda urun arar",
+  "name": "TC26_kullanici hotelreservationlist sayfasinda verileri girerek reservation arar",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "name": "@ebayarama"
+      "name": "@koalapalace"
+    },
+    {
+      "name": "@hotelreservationsearch"
     }
   ]
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
-  "name": "kullanici \"http://ebay.com\" sayfasina gider",
+  "name": "kullanici hotelroomreservationlist sayfasina gider",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.EbayAramaStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
+  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservationlist_sayfasina_gider()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici ebayda aramakutusuna \"bebek arabası\" yazar",
+  "name": "kullanici hotelroomreservationlist hotelroomid bolumunde \"team06\" secer",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.EbayAramaStepDefinitions.kullanici_ebayda_aramakutusuna_yazar(java.lang.String)"
+  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservationlist_hotelroomid_bolumunde_secer(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici ebaydaki sonuc sayisini ekrana yazar",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinitions.EbayAramaStepDefinitions.kullanici_ebaydaki_sonuc_sayisini_ekrana_yazar()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "TC06_kullanici ebayda urun arar",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@ebayarama"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "kullanici \"http://ebay.com\" sayfasina gider",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "stepdefinitions.EbayAramaStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "kullanici ebayda aramakutusuna \"bisiklet\" yazar",
+  "name": "kullanici hotelroomreservationlist arama kutusuna tiklar",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.EbayAramaStepDefinitions.kullanici_ebayda_aramakutusuna_yazar(java.lang.String)"
+  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservationlist_arama_kutusuna_tiklar()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici ebaydaki sonuc sayisini ekrana yazar",
+  "name": "kullanici hotelroomreservationlist kayitlarini inceler",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.EbayAramaStepDefinitions.kullanici_ebaydaki_sonuc_sayisini_ekrana_yazar()"
+  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservationlist_kayitlarini_inceler()"
 });
 formatter.result({
   "status": "passed"
