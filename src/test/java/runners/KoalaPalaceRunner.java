@@ -13,10 +13,9 @@ import org.junit.runner.RunWith;
         glue = "stepdefinitions",
         // tags = {"@tag1" , "@tag2" , "@tag3"}
         //tags = {"@koalapalace", "@hotelreservationnegativetest1", "@hotelreservationnegativetests"},
-        //tags = "@hotelsearch",
-        //tags = "@hotelroomsearch",
-        //tags = "@hotelsearchnegative01",
-        tags = "@hotelreservationsearch",
+        //tags = {"@hotelsearch", "@hotelroomsearch", "@hotelsearchnegative01", "@hotelreservationsearch"},
+        //tags = "@hoteledit",
+        tags = "@hotelroomedit",
         dryRun = false
 )
 
